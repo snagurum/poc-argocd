@@ -1,3 +1,10 @@
 resources:
   - deployment.yaml
   - service.yaml
+
+
+images:
+  - name: snagurum/hw-app
+    newName: snagurum/hw-app
+    newTag: "1"
+  - newTag: "1"
