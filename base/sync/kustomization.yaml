@@ -6,5 +6,5 @@ resources:
 images:
   - name: snagurum/hw-app
     newName: snagurum/hw-app
-    newTag: "1"
-  - newTag: "1"
+    newTag: "2"
+  - newTag: "2"
