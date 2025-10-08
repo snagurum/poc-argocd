@@ -1,0 +1,3 @@
+resources:
+  - ../base/sync/deployment.yaml
+  - ../base/sync/service.yaml

@@ -1,0 +1,3 @@
+resources:
+  - ../base/nosync/deployment.yaml
+  - ../base/nosync/service.yaml

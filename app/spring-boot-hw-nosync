@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    owner: chrp
+  name: spring-boot-hw-nosync
+  namespace: argocd
+  
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: services
+  project: default
+  source:
+    repoURL: https://snagurum:ipNCf4osY5SsRY6dTQXXYLMD4rpM3xviITW2GP4LV59SmpR3@ipNCf4osY5SsRY6dTQXXYLMD4rpM3xviITW2GP4LV59SmpR3@github.com/snagurum/spring-boot-hw.git
+    targetRevision: "main"
+    path: "env/nosync"
+  syncPolicy:
+    retry:
+      limit: 2
+    # automated:
+    #   selfHeal: true
+    #   allowEmpty: false
+    # syncOptions:
+      # - Replace=true
+      # - ApplyOutOfSyncOnly=true
+      # - PruneLast=true
