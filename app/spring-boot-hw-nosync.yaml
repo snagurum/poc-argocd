@@ -12,7 +12,7 @@ spec:
     namespace: services
   project: default
   source:
-    repoURL: https://snagurum:ipNCf4osY5SsRY6dTQXXYLMD4rpM3xviITW2GP4LV59SmpR3@ipNCf4osY5SsRY6dTQXXYLMD4rpM3xviITW2GP4LV59SmpR3@github.com/snagurum/spring-boot-hw.git
+    repoURL: https://github.com/snagurum/poc-argocd.git
     targetRevision: "main"
     path: "env/nosync"
   syncPolicy:

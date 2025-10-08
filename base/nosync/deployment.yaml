@@ -17,9 +17,9 @@ spec:
       maxSurge: 10%
       maxUnavailable: 0
   template:
-    # metadata:
-    #   labels:
-    #     app: backend-report-service
+    metadata:
+      labels:
+        app: nosync-service
     spec:
       containers:
       - name: sbhw-nosync

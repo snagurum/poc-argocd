@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sbhw-nosync
+  name: sbhw-sync
   namespace: services
   labels:
     app: sbhw-sync
@@ -17,12 +17,12 @@ spec:
       maxSurge: 10%
       maxUnavailable: 0
   template:
-    # metadata:
-    #   labels:
-    #     app: backend-report-service
+    metadata:
+      labels:
+        app: sync-service
     spec:
       containers:
-      - name: sbhw-nosync
+      - name: sbhw-sync
         image: snagurum/hw-app:latest
         imagePullPolicy: IfNotPresent
         # terminationMessagePath: /usr/src/app/logs/termination-log
